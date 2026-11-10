@@ -3,35 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
     />
     <title>QuickList</title>
   </head>
   <body>
     <main>
-      <h1>QuickList</h1>
+      <h1>quicklist</h1>
 
-      <a href="#">Voltar</a>
+      <div class="caixaVoltar">
+            <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          color="#ca3884"
+          fill="none"
+          stroke="#ca3884"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5.5 12.002H19"></path>
+          <path
+            d="M10.9999 18.002C10.9999 18.002 4.99998 13.583 4.99997 12.0019C4.99996 10.4208 11 6.00195 11 6.00195"
+          ></path>
+        </svg>
+        <a href="#">Voltar</a>
+      </div>
       <h2>Compras da semana</h2>
 
-      <div>
-        <input type="text" aria-label="Adicione um novo item" />
-        <button>Adicionar item</button>
+      <div class="caixaInput">
+        <input
+          type="text"
+          placeholder="Adicione um novo item"
+          class="inputAdicionarItem"
+        />
+        <button class="botaoAdicionarItem">Adicionar item</button>
       </div>
 
-      <div>
-        <div>
-          <label for="itemListaDeCompras"
-            ><input type="checkbox" id="itemListaDeCompras" />Pão de
+      <div class="containerCheck">
+        <div class="caixaCheck">
+          <label for="itemListaDeCompras" class="conteudoCheck"
+            ><input type="checkbox" id="itemLista1" />Pão de
             forma</label
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="24"
             height="24"
-            color="currentColor"
+            color="#374151"
             fill="none"
-            stroke="currentColor"
+            stroke="#374151"
             stroke-width="1.5"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -46,18 +75,18 @@
           </svg>
         </div>
 
-        <div>
-          <label for="itemListaDeCompras"
-            ><input type="checkbox" id="itemListaDeCompras" />Café preto</label
+        <div class="caixaCheck">
+          <label for="itemListaDeCompras" class="conteudoCheck"
+            ><input type="checkbox" id="itemLista2" />Café preto</label
           >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="24"
             height="24"
-            color="currentColor"
+            color="#374151"
             fill="none"
-            stroke="currentColor"
+            stroke="#374151"
             stroke-width="1.5"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -72,9 +101,9 @@
           </svg>
         </div>
 
-        <div>
-          <label for="itemListaDeCompras"
-            ><input type="checkbox" id="itemListaDeCompras" />Suco de
+        <div class="caixaCheck">
+          <label for="itemListaDeCompras" class="conteudoCheck"
+            ><input type="checkbox" id="itemLista3" />Suco de
             laranja</label
           >
           <svg
@@ -82,9 +111,9 @@
             viewBox="0 0 24 24"
             width="24"
             height="24"
-            color="currentColor"
+            color="#374151"
             fill="none"
-            stroke="currentColor"
+            stroke="#374151"
             stroke-width="1.5"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -99,18 +128,18 @@
           </svg>
         </div>
 
-        <div>
-          <label for="itemListaDeCompras"
-            ><input type="checkbox" id="itemListaDeCompras" />Bolacha</label
+        <div class="caixaCheck">
+          <label for="itemListaDeCompras" class="conteudoCheck"
+            ><input type="checkbox" id="itemLista4" />Bolacha</label
           >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="24"
             height="24"
-            color="currentColor"
+            color="#374151"
             fill="none"
-            stroke="currentColor"
+            stroke="#374151"
             stroke-width="1.5"
             stroke-linecap="round"
             stroke-linejoin="round"
