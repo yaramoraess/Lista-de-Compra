@@ -106,6 +106,7 @@ a {
 
 .conteudoCheck input[type="checkbox"] {
   -webkit-appearance: none;
+  appearance: none;
   width: 14px;
   height: 14px;
   border: 1px solid #d1d5db;
