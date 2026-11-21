@@ -102,6 +102,7 @@ a {
   gap: 10px;
   color: #374151;
   align-items: center;
+
 }
 
 .conteudoCheck input[type="checkbox"] {
@@ -114,13 +115,25 @@ a {
   cursor: pointer;
   margin: 0;
 
-  &:hover {
-    border: #7c8697 1px solid;
-  }
-  &::selection {
-    color: white;
-    background-color: #ca3884;
-  }
+  &:hover{
+    border: 1px solid #7c8697;
+
+}
+}
+
+
+
+.botaocheckbox{
+  &:checked{
+  border: none !important ;
+  background-color: #ca3884;}
+}
+
+.excluirItem{
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 .caixaCheck svg {
   width: 14px;
@@ -129,5 +142,18 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
+}
+.itemExcluido{
+  background-color: #c93847;
+  color: white;
+  display: flex;
+  width: 530px;
+  height: 35px;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
   align-items: center;
 }
